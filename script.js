@@ -200,9 +200,9 @@ function makeMove(cell) {
       const winMessage = document.getElementById('winMessage');
 
       if (currentPlayer === humanPlayer) {
-        winMessage.innerHTML = `<i class="fas fa-microchip"></i> <span class="win-message-text">A.I. wins!</span>`;
+        winMessage.innerHTML = `<i class="fas fa-microchip"></i> <span class="win-message-text"> wins!</span>`;
       } else {
-        winMessage.innerHTML = `<i class="fas fa-user"></i> <span class="win-message-text">Human wins!</span>`;
+        winMessage.innerHTML = `<i class="fas fa-user"></i> <span class="win-message-text"> wins!</span>`;
       }
 
       winMessage.classList.add('win'); // Add 'win' class for styling
