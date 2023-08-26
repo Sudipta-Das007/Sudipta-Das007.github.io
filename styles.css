@@ -179,3 +179,33 @@ body {
   transform: translate(-50%, -50%) rotate(45deg); /* Center the overlay */
 }
 
+/* Add styling for the refresh button */
+.refresh-button {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.refresh-button:hover {
+  background-color: #e67300;
+}
+
+/* Style the win and draw messages */
+.win-message {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.win {
+  color: green;
+}
+
+.draw {
+  color: blue;
+}
