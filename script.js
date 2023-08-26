@@ -200,9 +200,9 @@ function makeMove(cell) {
       const winMessage = document.getElementById('winMessage');
 
       if (currentPlayer === humanPlayer) {
-        winMessage.innerHTML = `<i class="fas fa-microchip"></i> <span class="win-message-text"> wins!</span>`;
+        winMessage.innerHTML = `<i class="fas fa-microchip"></i> <span class="win-message-text"> wins! <button class="refresh-button" onclick="restartGame()"><i class="fas fa-redo-alt"></i></button></span>`;
       } else {
-        winMessage.innerHTML = `<i class="fas fa-user"></i> <span class="win-message-text"> wins!</span>`;
+        winMessage.innerHTML = `<i class="fas fa-user"></i> <span class="win-message-text"> wins! <button class="refresh-button" onclick="restartGame()"><i class="fas fa-redo-alt"></i></button></span>`;
       }
 
       winMessage.classList.add('win'); // Add 'win' class for styling
@@ -216,7 +216,7 @@ function makeMove(cell) {
 
       // Display draw message inside the container
       const winMessage = document.getElementById('winMessage');
-      winMessage.innerHTML = `<span class="win-message-text">It's a draw!</span>`;
+      winMessage.innerHTML = `<span class="win-message-text">It's a draw! <button class="refresh-button" onclick="restartGame()"><i class="fas fa-redo-alt"></i></button></span>`;
       winMessage.classList.add('draw'); // Add 'draw' class for styling
     } else {
       currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
@@ -225,6 +225,10 @@ function makeMove(cell) {
   }
 }
 
+function restartGame() {
+  // Refresh the page to restart the game
+  location.reload();
+}
 
 
 
